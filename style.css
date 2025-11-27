@@ -1,9 +1,25 @@
-body{   
-    font-size: 100px;
+body{ 
+    background-color: aqua;  
+    font-size: 30px;
     color: purple
+
     
 }#container{
     border: 5px solid black;
     padding: 20px;
     margin: 20px;
 }
+#page {
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+    
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+
+
