@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Impact', sans-serif;
+    overflow: hidden;
+}
+
+.poster {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.arena-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.title {
+    position: absolute;
+    top: 10%;
+    color: #8B2635;
+    font-size: 18vw;
+    z-index: 2;
+    text-align: center;
+    letter-spacing: -5px;
+}
+
+.character-group {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 3;
+}
+
+.character-group img {
+    position: absolute;
+
+}
+
+/*DESKTOP*/
+@media (min-width: 1025px)  {
+   .title {
+    position: absolute;
+    top: -4%;
+    color: #8B2635;
+    font-size: 13vw;
+    z-index: 2;
+    text-align: center;
+    letter-spacing: 23px;
+   }
+    .img-face {
+        width: 57%;
+        left: 21%;
+        z-index: 3;
+        bottom: 142px;
+    }
+        .img-right {
+        width: 31%;
+        right: 28%;
+    }
+        .img-center {
+        width: 23%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 1024px) {
+    .title {
+    position: absolute;
+    top: 22%;
+    color: #8B2635;
+    font-size: 18vw;
+    z-index: 2;
+    text-align: center;
+    letter-spacing: 2px;
+    }
+    .img-face {
+        width: 131%;
+        left: -8%;
+        z-index: 3;
+        bottom: 224px;
+    
+    }
+    .img-right {
+        width: 80%;
+        right: -6%;
+
+        bottom: 91px;
+    }
+    .img-center {
+        width: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+        bottom: 90px;
+    }
+}

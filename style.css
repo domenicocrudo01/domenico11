@@ -1,25 +1,43 @@
-body{ 
-    background-color: aqua;  
-    font-size: 30px;
-    color: purple
-
-    
-}#container{
-    border: 5px solid black;
-    padding: 20px;
-    margin: 20px;
+html {
+    font-size: 16px;/* 16px = 1rem */
 }
-#page {
-    text-align: center;
-    font-size: 50px;
-    color: blue;
-    
+body {
+padding: 1rem;
 }
-.gallery {
+ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+.menu {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;  
 }
+
+li {
+    font-size: 1.5rem;
+}
+
+/* link a riposo*/
+a, a:link { 
+    color: #f00;
+    text-decoration: none;
+}
+
+/* link visitato*/
+a:visited { 
+    color: #00f;    
+}
+
+/*cursore su link*/
+a:hover, a:focus { 
+    color: #0f0;    
+}
+
+/* link premuti*/
+a:active { 
+    color: #ff0;    
+}
+
+
 
 
